@@ -16,8 +16,7 @@ public class GildedRoseShould {
     public void given_decrement_sellIn() throws Exception {
         Item thing = new Item("Aged Brie", 20, 20);
 
-        Item[] items = {thing};
-        new GildedRoseSwitch(items).updateQuality();
+        updateOneItem(thing);
 
         assertThat(thing.getSellIn(), is(19));
     }
@@ -26,8 +25,7 @@ public class GildedRoseShould {
     public void given_decrement_quality() throws Exception {
         Item thing = new Item("thing", 20, 11);
 
-        Item[] items = {thing};
-        new GildedRoseSwitch(items).updateQuality();
+        updateOneItem(thing);
 
         assertThat(thing.getQuality(), is(10));
     }
@@ -36,8 +34,7 @@ public class GildedRoseShould {
     public void given_decrement_when_sellIn_expires_twice_fast_quality() throws Exception {
         Item thing = new Item("thing", 0, 10);
 
-        Item[] items = {thing};
-        new GildedRoseSwitch(items).updateQuality();
+        updateOneItem(thing);
 
         assertThat(thing.getQuality(), is(8));
     }
@@ -46,8 +43,7 @@ public class GildedRoseShould {
     public void quality_is_never_negative() throws Exception {
         Item thing = new Item("thing", 20, 0);
 
-        Item[] items = {thing};
-        new GildedRoseSwitch(items).updateQuality();
+        updateOneItem(thing);
 
         assertThat(thing.getQuality(), is(0));
     }
@@ -56,8 +52,7 @@ public class GildedRoseShould {
     public void aged_brie_when_is_older_increments_quality() throws Exception {
         Item thing = new Item("Aged Brie", 20, 0);
 
-        Item[] items = {thing};
-        new GildedRoseSwitch(items).updateQuality();
+        updateOneItem(thing);
 
         assertThat(thing.getQuality(), is(1));
     }
@@ -66,8 +61,7 @@ public class GildedRoseShould {
     public void item_quality_is_never_more_than_50() throws Exception {
         Item thing = new Item("Aged Brie", 20, 50);
 
-        Item[] items = {thing};
-        new GildedRoseSwitch(items).updateQuality();
+        updateOneItem(thing);
 
         assertThat(thing.getQuality(), is(50));
     }
@@ -76,10 +70,14 @@ public class GildedRoseShould {
     public void sulfuras_never_decrements_quality() throws Exception {
         Item thing = new Item("Sulfuras, Hand of Ragnaros", 20, 33);
 
-        Item[] items = {thing};
-        new GildedRoseSwitch(items).updateQuality();
+        updateOneItem(thing);
 
         assertThat(thing.getQuality(), is(80));
+    }
+
+    private void updateOneItem(Item thing) {
+        Item[] items = {thing};
+        new GildedRoseSwitch(items).updateQuality();
     }
 
 }
