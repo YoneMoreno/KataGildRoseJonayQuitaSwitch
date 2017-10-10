@@ -70,7 +70,7 @@ public class GildedRoseShould {
 
     @Test
     public void given_backstage_quality_is_never_more_than_50() throws Exception {
-        Item thing = new Item("Backstage passes to a TAFKAL80ETC concert", 9, 50);
+        Item thing = new Backstage("Backstage passes to a TAFKAL80ETC concert", 9, 50);
 
         updateOneItem(thing);
 
@@ -89,7 +89,7 @@ public class GildedRoseShould {
 
     @Test
     public void given_backstage_quality_increments_2_when_10_sellIn_or_less() throws Exception {
-        Item thing = new Item("Backstage passes to a TAFKAL80ETC concert", 9, 33);
+        Item thing = new Backstage("Backstage passes to a TAFKAL80ETC concert", 9, 33);
 
         updateOneItem(thing);
 
@@ -98,7 +98,7 @@ public class GildedRoseShould {
 
     @Test
     public void given_backstage_quality_increments_3_when_5_sellIn_or_less() throws Exception {
-        Item thing = new Item("Backstage passes to a TAFKAL80ETC concert", 4, 33);
+        Item thing = new Backstage("Backstage passes to a TAFKAL80ETC concert", 4, 33);
 
         updateOneItem(thing);
 
@@ -107,7 +107,7 @@ public class GildedRoseShould {
 
     @Test
     public void given_backstage_quality_drops_to0_when_0_sellIn_or_less() throws Exception {
-        Item thing = new Item("Backstage passes to a TAFKAL80ETC concert", 0, 100);
+        Item thing = new Backstage("Backstage passes to a TAFKAL80ETC concert", 0, 100);
 
         updateOneItem(thing);
 
