@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="664715d2-c6bd-4a4e-9a37-a9b67565f6f8" name="Default" comment="First commit">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/out/test/Kata-Gilded-Rose-Switch/issue/GildedRoseShould.class" afterPath="$PROJECT_DIR$/java/out/test/Kata-Gilded-Rose-Switch/issue/GildedRoseShould.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/test/issue/GildedRoseShould.java" afterPath="$PROJECT_DIR$/java/test/issue/GildedRoseShould.java" />
-    </list>
+    <list default="true" id="664715d2-c6bd-4a4e-9a37-a9b67565f6f8" name="Default" comment="First commit" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +25,7 @@
         <entry file="file://$PROJECT_DIR$/java/test/issue/GildedRoseShould.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="218">
-              <caret line="96" column="71" lean-forward="false" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="71" />
+              <caret line="96" column="92" lean-forward="false" selection-start-line="96" selection-start-column="92" selection-end-line="96" selection-end-column="92" />
               <folding />
             </state>
           </provider>
@@ -541,7 +537,7 @@
     <entry file="file://$PROJECT_DIR$/java/test/issue/GildedRoseShould.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
-          <caret line="96" column="71" lean-forward="false" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="71" />
+          <caret line="96" column="92" lean-forward="false" selection-start-line="96" selection-start-column="92" selection-end-line="96" selection-end-column="92" />
           <folding />
         </state>
       </provider>
