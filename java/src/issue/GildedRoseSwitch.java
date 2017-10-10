@@ -41,12 +41,4 @@ class GildedRoseSwitch {
         }
     }
 
-    private void updateItemGenericQuality(Item item) {
-            if(item.getQuality() > 0){
-                if(item.getSellIn() <= 0){
-                    item.setQuality(item.getQuality()-2);
-                    }else{item.setQuality(item.getQuality()-1);}
-            }
-    }
-
 }

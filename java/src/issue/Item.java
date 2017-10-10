@@ -15,10 +15,6 @@ public class Item {
     }
 
     public void updateQuality(){
-        updateQualityItem();
-    }
-
-    public void updateQualityItem() {
         if(quality > 0){
             if(sellIn <= 0){
                 setQuality(getQuality()-2);

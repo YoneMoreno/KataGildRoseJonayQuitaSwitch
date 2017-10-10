@@ -60,13 +60,23 @@ public class GildedRoseShould {
     }
 
     @Test
-    public void item_quality_is_never_more_than_50() throws Exception {
-        Item thing = new Item("Aged Brie", 20, 50);
+    public void given_aged_brie_quality_is_never_more_than_50() throws Exception {
+        Item thing = new AgedBrie("Aged Brie", 20, 50);
 
         updateOneItem(thing);
 
         assertThat(thing.getQuality(), is(50));
     }
+
+    @Test
+    public void given_backstage_quality_is_never_more_than_50() throws Exception {
+        Item thing = new Item("Backstage passes to a TAFKAL80ETC concert", 9, 50);
+
+        updateOneItem(thing);
+
+        assertThat(thing.getQuality(), is(50));
+    }
+
 
     @Test
     public void sulfuras_never_decrements_quality() throws Exception {
