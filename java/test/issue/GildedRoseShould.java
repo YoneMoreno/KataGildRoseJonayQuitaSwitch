@@ -16,10 +16,11 @@ public class GildedRoseShould {
     public void given_decrement_sellIn() throws Exception {
         Item thing = new Item("thing", 20, 20);
 
-        Item[] items = new Item[1];
-        items[0] = thing;
-        GildedRoseSwitch gildedRoseSwitch = new GildedRoseSwitch(items);
-        gildedRoseSwitch.updateQuality();
+        Item[] items = {thing};
+        new GildedRoseSwitch(items).updateQuality();
+
         assertThat(thing.getSellIn(), is(19));
     }
+
+
 }
