@@ -7,10 +7,9 @@ class GildedRoseSwitch {
         this.items = items;
     }
 
-    void updateQuality() {
+    void update() {
         for (Item item : items) {
-            item.updateQuality();
-            item.setSellIn(item.getSellIn() - 1);
+            item.update();
         }
     }
 

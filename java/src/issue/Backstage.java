@@ -8,7 +8,7 @@ public class Backstage extends Item {
 
     @Override
     public void updateQuality() {
-        setSellIn(getSellIn() - 1);
+        decrementSellIn();
 
         if (getSellIn() <= 0) {
             setQuality(0);

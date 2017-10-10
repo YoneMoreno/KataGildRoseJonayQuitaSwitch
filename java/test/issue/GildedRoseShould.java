@@ -117,7 +117,7 @@ public class GildedRoseShould {
 
     private void updateOneItem(Item thing) {
         Item[] items = {thing};
-        new GildedRoseSwitch(items).updateQuality();
+        new GildedRoseSwitch(items).update();
     }
 
 }

@@ -14,6 +14,11 @@ public class Item {
         this.quality = quality;
     }
 
+    public void update(){
+        updateQuality();
+        decrementSellIn();
+    }
+
     public void updateQuality(){
         if(quality > 0){
             if(sellIn <= 0){
@@ -49,5 +54,9 @@ public class Item {
 
     void incrementQuality(int increment) {
         if(getQuality() < 50) {setQuality(getQuality() + increment);}
+    }
+
+    void decrementSellIn(){
+        setSellIn(getSellIn()-1);
     }
 }

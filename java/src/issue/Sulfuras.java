@@ -10,6 +10,5 @@ public class Sulfuras extends Item {
         if(getQuality() != 80){
             setQuality(80);
         }
-        setSellIn(getSellIn()-1);
     }
 }
