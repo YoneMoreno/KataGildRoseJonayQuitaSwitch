@@ -72,4 +72,14 @@ public class GildedRoseShould {
         assertThat(thing.getQuality(), is(50));
     }
 
+    @Test
+    public void sulfuras_never_decrements_quality() throws Exception {
+        Item thing = new Item("Sulfuras, Hand of Ragnaros", 20, 33);
+
+        Item[] items = {thing};
+        new GildedRoseSwitch(items).updateQuality();
+
+        assertThat(thing.getQuality(), is(80));
+    }
+
 }
