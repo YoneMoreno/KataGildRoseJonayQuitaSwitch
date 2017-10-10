@@ -46,4 +46,8 @@ public class Item {
     void setQuality(int quality) {
         this.quality = quality;
     }
+
+    void incrementQuality(int increment) {
+        if(getQuality() < 50) {setQuality(getQuality() + increment);}
+    }
 }

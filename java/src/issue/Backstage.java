@@ -12,16 +12,10 @@ public class Backstage extends Item {
 
         if (getSellIn() <= 0) {
             setQuality(0);
-        } else {
-            if (getSellIn() <= 5) {
-                if (getQuality() < 50) {
-                    setQuality(getQuality() + 3);
-                }
-            } else if (getSellIn() <= 10) {
-                if (getQuality() < 50) {
-                    setQuality(getQuality() + 2);
-                }
-            }
+        } else if (getSellIn() <= 5) {
+            super.incrementQuality(3);
+        } else if (getSellIn() <= 10) {
+            super.incrementQuality(2);
         }
     }
 }
