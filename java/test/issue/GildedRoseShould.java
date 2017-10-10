@@ -80,7 +80,7 @@ public class GildedRoseShould {
 
     @Test
     public void sulfuras_never_decrements_quality() throws Exception {
-        Item thing = new Item("Sulfuras, Hand of Ragnaros", 20, 33);
+        Item thing = new Sulfuras("Sulfuras, Hand of Ragnaros", 20, 33);
 
         updateOneItem(thing);
 

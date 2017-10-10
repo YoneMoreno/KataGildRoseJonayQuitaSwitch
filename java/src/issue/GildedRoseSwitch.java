@@ -10,12 +10,7 @@ class GildedRoseSwitch {
      void updateQuality() {
         for (Item item : items) {
          switch (item.getName()){
-             case "Sulfuras, Hand of Ragnaros":
-                 if(item.getQuality() != 80){
-                     item.setQuality(80);
-                 }
-                 item.setSellIn(item.getSellIn()-1);
-                 break;
+
              case "Backstage passes to a TAFKAL80ETC concert":
                  item.setSellIn(item.getSellIn()-1);
 
