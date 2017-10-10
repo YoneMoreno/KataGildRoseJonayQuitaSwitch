@@ -41,8 +41,8 @@ class GildedRoseSwitch {
                  }
                  break;
              default:
-                 item.setSellIn(item.getSellIn()-1);
                  updateItemGenericQuality(item);
+                 item.setSellIn(item.getSellIn()-1);
                  break;
          }
         }
