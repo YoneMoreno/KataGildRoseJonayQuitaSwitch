@@ -114,6 +114,15 @@ public class GildedRoseShould {
         assertThat(thing.getQuality(), is(0));
     }
 
+    @Test
+    public void given_conjured_quality_decrement_double_fast() throws Exception {
+        Item thing = new Conjured("item c", 4, 100);
+
+        updateOneItem(thing);
+
+        assertThat(thing.getQuality(), is(98));
+    }
+
 
     private void updateOneItem(Item thing) {
         Item[] items = {thing};

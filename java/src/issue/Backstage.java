@@ -8,14 +8,12 @@ public class Backstage extends Item {
 
     @Override
     public void updateQuality() {
-        decrementSellIn();
-
         if (getSellIn() <= 0) {
             setQuality(0);
         } else if (getSellIn() <= 5) {
-            super.incrementQuality(3);
+            incrementQuality(3);
         } else if (getSellIn() <= 10) {
-            super.incrementQuality(2);
+            incrementQuality(2);
         }
     }
 }
