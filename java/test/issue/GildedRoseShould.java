@@ -14,7 +14,7 @@ public class GildedRoseShould {
 
     @Test
     public void given_decrement_sellIn() throws Exception {
-        Item thing = new Item("thing", 20, 20);
+        Item thing = new Item("Aged Brie", 20, 20);
 
         Item[] items = {thing};
         new GildedRoseSwitch(items).updateQuality();
@@ -50,6 +50,18 @@ public class GildedRoseShould {
         new GildedRoseSwitch(items).updateQuality();
 
         assertThat(thing.getQuality(), is(0));
+    }
+
+    @Test
+    public void aged_brie_when_is_older_increments_quality() throws Exception {
+        Item thing = new Item("Aged Brie", 20, 0);
+
+        Item[] items = {thing};
+        new GildedRoseSwitch(items).updateQuality();
+
+        assertThat(thing.getQuality(), is(1));
+
+
     }
 
 }

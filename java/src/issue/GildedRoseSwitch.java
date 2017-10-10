@@ -14,7 +14,7 @@ class GildedRoseSwitch {
                 if(item.getSellIn() >= 0){
                     if(item.getQuality() < 50) {item.setQuality(item.getQuality() + 1);}
                 }else{
-                    updateItemGenericQuality(item);
+                    updateItemGenericQuality(item); //aqui //aqui
                 }
                  break;
              case "Sulfuras, Hand of Ragnaros":
@@ -42,9 +42,9 @@ class GildedRoseSwitch {
                  break;
              default:
                  updateItemGenericQuality(item);
-                 item.setSellIn(item.getSellIn()-1);
                  break;
          }
+        item.setSellIn(item.getSellIn()-1);
         }
     }
 
