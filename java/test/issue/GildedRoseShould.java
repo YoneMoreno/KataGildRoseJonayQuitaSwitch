@@ -8,7 +8,6 @@ import static org.hamcrest.core.Is.is;
 public class GildedRoseShould {
 
 
-
     @Test
     public void test() throws Exception {
         assertThat(true, is(true));
@@ -16,7 +15,7 @@ public class GildedRoseShould {
 
     @Test
     public void given_decrement_sellIn() throws Exception {
-        Item thing = new Item("Aged Brie", 20, 20);
+        Item thing = new Item(20, 20);
 
         updateOneItem(thing);
 
@@ -25,7 +24,7 @@ public class GildedRoseShould {
 
     @Test
     public void given_decrement_quality() throws Exception {
-        Item thing = new Item("thing", 20, 11);
+        Item thing = new Item(20, 11);
 
         updateOneItem(thing);
 
@@ -34,7 +33,7 @@ public class GildedRoseShould {
 
     @Test
     public void given_decrement_when_sellIn_expires_twice_fast_quality() throws Exception {
-        Item thing = new Item("thing", 0, 10);
+        Item thing = new Item(0, 10);
 
         updateOneItem(thing);
 
@@ -43,7 +42,7 @@ public class GildedRoseShould {
 
     @Test
     public void quality_is_never_negative() throws Exception {
-        Item thing = new Item("thing", 20, 0);
+        Item thing = new Item(20, 0);
 
         updateOneItem(thing);
 
@@ -52,7 +51,7 @@ public class GildedRoseShould {
 
     @Test
     public void aged_brie_when_is_older_increments_quality() throws Exception {
-        Item thing = new AgedBrie("Aged Brie", 20, 0);
+        Item thing = new AgedBrie(20, 0);
 
         updateOneItem(thing);
 
@@ -61,7 +60,7 @@ public class GildedRoseShould {
 
     @Test
     public void given_aged_brie_quality_is_never_more_than_50() throws Exception {
-        Item thing = new AgedBrie("Aged Brie", 20, 50);
+        Item thing = new AgedBrie(20, 50);
 
         updateOneItem(thing);
 
@@ -70,7 +69,7 @@ public class GildedRoseShould {
 
     @Test
     public void given_backstage_quality_is_never_more_than_50() throws Exception {
-        Item thing = new Backstage("Backstage passes to a TAFKAL80ETC concert", 9, 50);
+        Item thing = new Backstage(9, 50);
 
         updateOneItem(thing);
 
@@ -80,7 +79,7 @@ public class GildedRoseShould {
 
     @Test
     public void sulfuras_never_decrements_quality() throws Exception {
-        Item thing = new Sulfuras("Sulfuras, Hand of Ragnaros", 20, 33);
+        Item thing = new Sulfuras(20, 33);
 
         updateOneItem(thing);
 
@@ -89,7 +88,7 @@ public class GildedRoseShould {
 
     @Test
     public void given_backstage_quality_increments_2_when_10_sellIn_or_less() throws Exception {
-        Item thing = new Backstage("Backstage passes to a TAFKAL80ETC concert", 9, 33);
+        Item thing = new Backstage(9, 33);
 
         updateOneItem(thing);
 
@@ -98,7 +97,7 @@ public class GildedRoseShould {
 
     @Test
     public void given_backstage_quality_increments_3_when_5_sellIn_or_less() throws Exception {
-        Item thing = new Backstage("Backstage passes to a TAFKAL80ETC concert", 4, 33);
+        Item thing = new Backstage(4, 33);
 
         updateOneItem(thing);
 
@@ -107,7 +106,7 @@ public class GildedRoseShould {
 
     @Test
     public void given_backstage_quality_drops_to0_when_0_sellIn_or_less() throws Exception {
-        Item thing = new Backstage("Backstage passes to a TAFKAL80ETC concert", 0, 100);
+        Item thing = new Backstage(0, 100);
 
         updateOneItem(thing);
 
@@ -116,7 +115,7 @@ public class GildedRoseShould {
 
     @Test
     public void given_conjured_quality_decrement_double_fast() throws Exception {
-        Item thing = new Conjured("item c", 4, 100);
+        Item thing = new Conjured(4, 100);
 
         updateOneItem(thing);
 

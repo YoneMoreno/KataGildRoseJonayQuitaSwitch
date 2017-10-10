@@ -1,8 +1,8 @@
 package issue;
 
 public class Conjured extends Item {
-    public Conjured(String name, int sellIn, int quality) {
-        super(name, sellIn, quality);
+    public Conjured( int sellIn, int quality) {
+        super(sellIn, quality);
     }
 
     @Override

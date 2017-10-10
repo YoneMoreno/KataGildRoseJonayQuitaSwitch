@@ -2,14 +2,12 @@ package issue;
 
 public class Item {
 
-    private String name;
-
     private int sellIn;
 
     private int quality;
 
-    Item(String name, int sellIn, int quality) {
-        this.name = name;
+    Item(int sellIn, int quality) {
+
         this.sellIn = sellIn;
         this.quality = quality;
     }
@@ -29,12 +27,10 @@ public class Item {
 
     @Override
     public String toString() {
-        return this.name + ", " + this.sellIn + ", " + this.quality;
+        return this.sellIn + ", " + this.quality;
     }
 
-    String getName() {
-        return name;
-    }
+
 
     int getSellIn() {
         return sellIn;
