@@ -14,6 +14,18 @@ public class Item {
         this.quality = quality;
     }
 
+    public void updateQuality(){
+        updateQualityItem();
+    }
+
+    public void updateQualityItem() {
+        if(quality > 0){
+            if(sellIn <= 0){
+                setQuality(getQuality()-2);
+            }else{setQuality(getQuality()-1);}
+        }
+    }
+
     @Override
     public String toString() {
         return this.name + ", " + this.sellIn + ", " + this.quality;

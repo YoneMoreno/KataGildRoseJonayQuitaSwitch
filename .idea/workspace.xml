@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="664715d2-c6bd-4a4e-9a37-a9b67565f6f8" name="Default" comment="First commit" />
+    <list default="true" id="664715d2-c6bd-4a4e-9a37-a9b67565f6f8" name="Default" comment="First commit">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java/out/production/Kata-Gilded-Rose-Switch/issue/AgedBrie.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java/src/issue/AgedBrie.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/out/production/Kata-Gilded-Rose-Switch/issue/Item.class" afterPath="$PROJECT_DIR$/java/out/production/Kata-Gilded-Rose-Switch/issue/Item.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/out/test/Kata-Gilded-Rose-Switch/issue/GildedRoseShould.class" afterPath="$PROJECT_DIR$/java/out/test/Kata-Gilded-Rose-Switch/issue/GildedRoseShould.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/src/issue/GildedRoseSwitch.java" afterPath="$PROJECT_DIR$/java/src/issue/GildedRoseSwitch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/src/issue/Item.java" afterPath="$PROJECT_DIR$/java/src/issue/Item.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/test/issue/GildedRoseShould.java" afterPath="$PROJECT_DIR$/java/test/issue/GildedRoseShould.java" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,18 +23,18 @@
       <file leaf-file-name="GildedRoseSwitch.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java/src/issue/GildedRoseSwitch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="25" column="60" lean-forward="false" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="60" />
+            <state relative-caret-position="310">
+              <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GildedRoseShould.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GildedRoseShould.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java/test/issue/GildedRoseShould.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="96" column="92" lean-forward="false" selection-start-line="96" selection-start-column="92" selection-end-line="96" selection-end-column="92" />
+            <state relative-caret-position="72">
+              <caret line="52" column="3" lean-forward="false" selection-start-line="52" selection-start-column="3" selection-end-line="52" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -34,7 +43,7 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
+            <state relative-caret-position="-551">
               <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="23" />
               <folding />
             </state>
@@ -44,9 +53,25 @@
       <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java/src/issue/Item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-68">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="174">
+              <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+              <folding>
+                <element signature="e#289#290#0" expanded="true" />
+                <element signature="e#324#325#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AgedBrie.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/java/src/issue/AgedBrie.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+              <folding>
+                <element signature="e#104#105#0" expanded="true" />
+                <element signature="e#148#149#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -65,6 +90,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/java/test/solution/GildedRoseShould.java" />
+        <option value="$PROJECT_DIR$/java/src/issue/Item.java" />
+        <option value="$PROJECT_DIR$/java/src/issue/AgedBrie.java" />
         <option value="$PROJECT_DIR$/java/src/issue/GildedRoseSwitch.java" />
         <option value="$PROJECT_DIR$/java/test/issue/GildedRoseShould.java" />
       </list>
@@ -510,25 +537,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/issue/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/issue/GildedRoseSwitch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="25" column="60" lean-forward="false" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
+        <state relative-caret-position="-551">
           <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="23" />
           <folding />
         </state>
@@ -536,9 +547,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/java/test/issue/GildedRoseShould.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="96" column="92" lean-forward="false" selection-start-line="96" selection-start-column="92" selection-end-line="96" selection-end-column="92" />
+        <state relative-caret-position="72">
+          <caret line="52" column="3" lean-forward="false" selection-start-line="52" selection-start-column="3" selection-end-line="52" selection-end-column="3" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/src/issue/GildedRoseSwitch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/src/issue/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+          <folding>
+            <element signature="e#289#290#0" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/src/issue/AgedBrie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding>
+            <element signature="e#104#105#0" expanded="true" />
+            <element signature="e#148#149#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

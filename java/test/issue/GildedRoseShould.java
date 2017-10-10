@@ -7,6 +7,8 @@ import static org.hamcrest.core.Is.is;
 
 public class GildedRoseShould {
 
+
+
     @Test
     public void test() throws Exception {
         assertThat(true, is(true));
@@ -50,7 +52,7 @@ public class GildedRoseShould {
 
     @Test
     public void aged_brie_when_is_older_increments_quality() throws Exception {
-        Item thing = new Item("Aged Brie", 20, 0);
+        Item thing = new AgedBrie("Aged Brie", 20, 0);
 
         updateOneItem(thing);
 
