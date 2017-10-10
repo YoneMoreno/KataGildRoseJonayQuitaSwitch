@@ -93,6 +93,16 @@ public class GildedRoseShould {
         assertThat(thing.getQuality(), is(36));
     }
 
+    @Test
+    public void given_backstage_quality_drops_to0_when_0_sellIn_or_less() throws Exception {
+        Item thing = new Item("Backstage passes to a TAFKAL80ETC concert", 0, 100);
+
+        updateOneItem(thing);
+
+        assertThat(thing.getQuality(), is(0));
+    }
+
+
     private void updateOneItem(Item thing) {
         Item[] items = {thing};
         new GildedRoseSwitch(items).updateQuality();
