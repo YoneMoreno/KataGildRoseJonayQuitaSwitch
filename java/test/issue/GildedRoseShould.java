@@ -41,4 +41,15 @@ public class GildedRoseShould {
 
         assertThat(thing.getQuality(), is(8));
     }
+
+    @Test
+    public void quality_is_never_negative() throws Exception {
+        Item thing = new Item("thing", 20, 0);
+
+        Item[] items = {thing};
+        new GildedRoseSwitch(items).updateQuality();
+
+        assertThat(thing.getQuality(), is(0));
+    }
+
 }
