@@ -60,8 +60,16 @@ public class GildedRoseShould {
         new GildedRoseSwitch(items).updateQuality();
 
         assertThat(thing.getQuality(), is(1));
+    }
 
+    @Test
+    public void item_quality_is_never_more_than_50() throws Exception {
+        Item thing = new Item("Aged Brie", 20, 50);
 
+        Item[] items = {thing};
+        new GildedRoseSwitch(items).updateQuality();
+
+        assertThat(thing.getQuality(), is(50));
     }
 
 }
